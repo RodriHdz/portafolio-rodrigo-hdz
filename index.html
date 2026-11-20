@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10030b" />
+    <meta
+      name="description"
+      content="Portafolio de Rodrigo Quiroz Hernandez, desarrollador de software. Proyectos, tecnologías y contacto."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Rodrigo Quiroz | Desarrollador de Software</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+      <div class="site-noise" aria-hidden="true"></div>
+      <header class="site-header" id="siteHeader">
+        <nav class="navbar navbar-expand-lg container-xl site-navbar" aria-label="Navegación principal">
+          <a class="brand" href="#inicio" aria-label="Rodrigo Quiroz, ir al inicio">
+            <span class="brand-mark">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m12 2 2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8L12 2Z" />
+              </svg>
+            </span>
+            <span class="brand-name">RQ<span>.</span><small>SHINOBI DEV</small></span>
+          </a>
+
+          <button
+            class="navbar-toggler nav-toggle"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavigation"
+            aria-controls="mainNavigation"
+            aria-expanded="false"
+            aria-label="Abrir menú"
+          >
+            <svg class="icon icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+            <svg class="icon icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+              <path d="m5 5 14 14M19 5 5 19" />
+            </svg>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav nav-links ms-auto align-items-lg-center">
+              <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tecnologias">Tecnologías</a></li>
+              <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <!-- ================================================
+             01. PORTADA / HERO
+        ================================================= -->
+        <section class="hero-section" id="inicio" aria-labelledby="heroTitle">
+          <div class="hero-scene" aria-hidden="true">
+            <div class="hero-moon"></div>
+            <div class="hero-horizon"></div>
+            <div class="hero-village hero-village-back"></div>
+            <div class="hero-village hero-village-front"></div>
+            <div class="hero-rock"></div>
+            <div class="hero-aura aura-one"></div>
+            <div class="hero-aura aura-two"></div>
+
+            <svg class="cloud-shape cloud-left" viewBox="0 0 220 112" aria-hidden="true">
+              <path d="M34 79C15 80 8 65 17 52c-4-19 17-32 34-24C65 5 101 10 106 34c17-12 43-5 49 15 19-11 47 2 47 23 0 17-15 27-32 27H42c-16 0-22-9-17-19 5-10 21-10 26-1" />
+              <path d="M78 83c-8 0-9-10-1-14 8-4 17-1 17 7 0 11-18 14-26 6" />
+            </svg>
+            <svg class="cloud-shape cloud-right" viewBox="0 0 220 112" aria-hidden="true">
+              <path d="M34 79C15 80 8 65 17 52c-4-19 17-32 34-24C65 5 101 10 106 34c17-12 43-5 49 15 19-11 47 2 47 23 0 17-15 27-32 27H42c-16 0-22-9-17-19 5-10 21-10 26-1" />
+              <path d="M78 83c-8 0-9-10-1-14 8-4 17-1 17 7 0 11-18 14-26 6" />
+            </svg>
+
+            <div class="hero-torii"><span></span><i></i></div>
+            <div class="petal-field">
+              <span style="--left: 7%; --top: 18%; --delay: 0s"></span>
+              <span style="--left: 18%; --top: 66%; --delay: 1.2s"></span>
+              <span style="--left: 29%; --top: 24%; --delay: 2.3s"></span>
+              <span style="--left: 41%; --top: 83%; --delay: 0.7s"></span>
+              <span style="--left: 52%; --top: 14%; --delay: 1.8s"></span>
+              <span style="--left: 64%; --top: 72%; --delay: 0.3s"></span>
+              <span style="--left: 73%; --top: 30%; --delay: 2.7s"></span>
+              <span style="--left: 86%; --top: 62%; --delay: 1.4s"></span>
+              <span style="--left: 94%; --top: 21%; --delay: 0.9s"></span>
+              <span style="--left: 13%; --top: 91%; --delay: 2.1s"></span>
+              <span style="--left: 78%; --top: 92%; --delay: 0.5s"></span>
+              <span style="--left: 37%; --top: 48%; --delay: 1.6s"></span>
+            </div>
+          </div>
+
+          <div class="container-xl hero-container">
+            <div class="row align-items-center hero-row">
+              <div class="col-lg-7 hero-copy">
+                <div class="hero-badge reveal">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m12 2 2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8L12 2Z" />
+                  </svg>
+                  <span>DESARROLLADOR DE SOFTWARE</span>
+                </div>
+                <p class="hero-kicker reveal">忍道 · DISCIPLINA · CREATIVIDAD</p>
+                <h1 class="hero-title reveal" id="heroTitle">
+                  <span class="hero-name-first">Rodrigo Quiroz</span>
+                  <span class="hero-name-last">Hernandez</span>
+                </h1>
+                <p class="hero-description reveal">
+                  Apasionado por la tecnología, el anime y el desarrollo de software.
+                  Siempre buscando aprender y mejorar.
+                </p>
+
+                <div class="hero-actions reveal">
+                  <a class="button button-primary" href="#proyectos">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-17-3 24" />
+                    </svg>
+                    <span>Ver proyectos</span>
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12h14m-6-6 6 6-6 6" />
+                    </svg>
+                  </a>
+                  <a class="button button-outline" href="#contacto">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M12 3v12m-5-5 5 5 5-5M4 19h16" />
+                    </svg>
+                    <span>Solicitar CV</span>
+                  </a>
+                </div>
+
+                <div class="hero-stack reveal" aria-label="Tecnologías principales">
+                  <span class="mini-skill html" title="HTML">5</span>
+                  <span class="mini-skill css" title="CSS">3</span>
+                  <span class="mini-skill javascript" title="JavaScript">JS</span>
+                  <span class="mini-skill bootstrap" title="Bootstrap">B</span>
+                  <span class="mini-skill vite" title="Vite">V</span>
+                </div>
+              </div>
+
+              <div class="col-lg-5 hero-character-column">
+                <div class="character-stage reveal">
+                  <div class="character-moon-ring"></div>
+                  <div class="character-energy energy-one"></div>
+                  <div class="character-energy energy-two"></div>
+                  <div class="character-glow"></div>
+                  <img
+                    class="hero-avatar"
+                    src="/src/assets/rodrigo-avatar.png"
+                    alt="Avatar de Rodrigo estilo Minecraft con fondo rojo oscuro"
+                    fetchpriority="high"
+                  />
+                  <div class="character-caption">
+                    <span>PLAYER 01</span>
+                    <strong>RODRIGO / 忍</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a class="scroll-cue" href="#sobre-mi" aria-label="Desplazarse a la sección Sobre mí">
+              <span></span>
+              <small>SCROLL TO EXPLORE</small>
+            </a>
+          </div>
+
+          <div class="hero-bottom-line" aria-hidden="true">
+            <span>NARUTO SHIPPUDEN INSPIRED</span>
+            <i></i>
+            <span>DREAM · CODE · ACHIEVE</span>
+          </div>
+        </section>
+
+        <!-- ================================================
+             02. SOBRE MÍ
+        ================================================= -->
+        <section class="content-section about-section" id="sobre-mi" aria-labelledby="aboutTitle">
+          <div class="container-xl">
+            <div class="section-heading reveal">
+              <div>
+                <p class="section-index"><span>01</span> / CONÓCEME</p>
+                <h2 id="aboutTitle">Sobre <em>mí.</em></h2>
+              </div>
+              <p class="section-aside">Cada línea de código<br />es un paso en mi camino.</p>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+              <div class="col-lg-4">
+                <div class="about-quote-card reveal">
+                  <div class="quote-mark">“</div>
+                  <p>Un verdadero shinobi nunca deja de aprender.</p>
+                  <span>MY NINDŌ · 忍道</span>
+                  <div class="quote-seal">RQ</div>
+                </div>
+              </div>
+
+              <div class="col-lg-8">
+                <div class="about-copy-card reveal">
+                  <div class="about-card-heading">
+                    <span class="section-emblem">
+                      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M20 21a8 8 0 0 0-16 0m8-10a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" />
+                      </svg>
+                    </span>
+                    <span>UN POCO SOBRE MÍ</span>
+                  </div>
+                  <h3>Me gusta crear, resolver problemas y convertir ideas en experiencias digitales.</h3>
+                  <p>
+                    Soy Rodrigo, desarrollador de software en constante aprendizaje. Me interesa construir
+                    aplicaciones web funcionales, cuidar los detalles de cada interfaz y trabajar en equipo
+                    para encontrar buenas soluciones.
+                  </p>
+                  <p>
+                    Disfruto explorar nuevas herramientas, fortalecer mis bases de programación y llevar
+                    cada proyecto un poco más lejos.
+                  </p>
+                  <div class="about-traits">
+                    <span>Aprendiz constante</span>
+                    <span>Trabajo en equipo</span>
+                    <span>Atención al detalle</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================
+             03. TECNOLOGÍAS
+        ================================================= -->
+        <section class="content-section technologies-section" id="tecnologias" aria-labelledby="techTitle">
+          <div class="container-xl">
+            <div class="section-heading reveal">
+              <div>
+                <p class="section-index"><span>02</span> / MI ARSENAL</p>
+                <h2 id="techTitle">Tecnologías <em>que utilizo.</em></h2>
+              </div>
+              <p class="section-aside">Herramientas para transformar<br />ideas en soluciones.</p>
+            </div>
+
+            <div class="primary-skills-grid">
+              <article class="skill-card reveal">
+                <div class="skill-logo html">5</div>
+                <h3>HTML</h3>
+                <p>Estructura semántica</p>
+              </article>
+              <article class="skill-card reveal">
+                <div class="skill-logo css">3</div>
+                <h3>CSS</h3>
+                <p>Diseño responsive</p>
+              </article>
+              <article class="skill-card reveal">
+                <div class="skill-logo javascript">JS</div>
+                <h3>JavaScript</h3>
+                <p>Interactividad y lógica</p>
+              </article>
+              <article class="skill-card reveal">
+                <div class="skill-logo bootstrap">B</div>
+                <h3>Bootstrap</h3>
+                <p>Componentes y grid</p>
+              </article>
+              <article class="skill-card reveal">
+                <div class="skill-logo vite">V</div>
+                <h3>Vite</h3>
+                <p>Entorno de desarrollo</p>
+              </article>
+            </div>
+
+            <div class="secondary-skills-panel reveal">
+              <div class="secondary-heading">
+                <span class="secondary-icon">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-17-3 24" />
+                  </svg>
+                </span>
+                <div>
+                  <p class="eyebrow">CONOCIMIENTOS ADICIONALES</p>
+                  <h3>También he trabajado con</h3>
+                </div>
+              </div>
+              <div class="tag-list tag-list-large">
+                <span>Java</span>
+                <span>C#</span>
+                <span>.NET</span>
+                <span>SQL</span>
+                <span>React</span>
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Scrum</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================
+             04. PROYECTOS
+        ================================================= -->
+        <section class="content-section projects-section" id="proyectos" aria-labelledby="projectsTitle">
+          <div class="container-xl">
+            <div class="section-heading reveal">
+              <div>
+                <p class="section-index"><span>03</span> / MISIONES</p>
+                <h2 id="projectsTitle">Proyectos <em>destacados.</em></h2>
+              </div>
+              <p class="section-aside">Ideas que pasaron del papel<br />a una experiencia digital.</p>
+            </div>
+
+            <div class="row g-4 project-grid">
+              <div class="col-md-6 col-xl-4">
+                <article class="project-card reveal">
+                  <div class="project-preview">
+                    <div class="project-art project-art-apex">
+                      <div class="art-topline"><span>APEX // IRON</span><span>01—03</span></div>
+                      <div class="apex-art-copy">
+                        <span>TECHNOLOGY STORE</span>
+                        <strong>POWER<br />YOUR SETUP.</strong>
+                        <i>PERFORMANCE / DESIGN / POWER</i>
+                      </div>
+                      <div class="apex-device"><span></span><span></span><span></span></div>
+                      <div class="art-orbit"></div>
+                    </div>
+                    <span class="project-number">01</span>
+                  </div>
+                  <div class="project-body">
+                    <p class="eyebrow">E-COMMERCE · DESARROLLO WEB</p>
+                    <div class="project-title-row">
+                      <h3>APEX IRON</h3>
+                      <button
+                        class="project-details-button"
+                        type="button"
+                        data-project-title="APEX IRON"
+                        data-project-category="E-COMMERCE · DESARROLLO WEB"
+                        data-project-description="Proyecto colaborativo de comercio electrónico enfocado en productos tecnológicos. La propuesta contempla una interfaz responsiva, navegación por categorías y componentes para presentar productos de forma clara."
+                        data-project-stack="HTML, CSS, JavaScript, Bootstrap"
+                        data-project-status="Proyecto colaborativo"
+                        aria-label="Ver detalles de APEX IRON"
+                      >
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M7 17 17 7M8 7h9v9" />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="project-description">
+                      Concepto de tienda en línea de hardware y tecnología, con una identidad visual enfocada en rendimiento y diseño.
+                    </p>
+                    <div class="tag-list">
+                      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-6 col-xl-4">
+                <article class="project-card reveal">
+                  <div class="project-preview">
+                    <div class="project-art project-art-hydra">
+                      <div class="art-topline"><span>HYDRA</span><span>SWIM / TRAIN / REPEAT</span></div>
+                      <div class="hydra-water"></div>
+                      <div class="hydra-art-copy">
+                        <span>THE WATER IS YOURS</span>
+                        <strong>BEYOND<br />THE LIMIT.</strong>
+                        <i>EXPLORE COLLECTION ↗</i>
+                      </div>
+                      <div class="hydra-mark">H</div>
+                    </div>
+                    <span class="project-number">02</span>
+                  </div>
+                  <div class="project-body">
+                    <p class="eyebrow">LANDING PAGE · UI</p>
+                    <div class="project-title-row">
+                      <h3>HYDRA</h3>
+                      <button
+                        class="project-details-button"
+                        type="button"
+                        data-project-title="HYDRA"
+                        data-project-category="LANDING PAGE · UI"
+                        data-project-description="Proyecto de interfaz para una marca enfocada en natación. El diseño organiza las secciones de Hombre, Mujer, Equipo y Catálogo, priorizando una navegación sencilla y adaptable."
+                        data-project-stack="HTML, CSS, JavaScript, Bootstrap"
+                        data-project-status="Proyecto web"
+                        aria-label="Ver detalles de HYDRA"
+                      >
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M7 17 17 7M8 7h9v9" />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="project-description">
+                      Landing page conceptual para una marca de natación, con navegación por categorías y una estética deportiva.
+                    </p>
+                    <div class="tag-list">
+                      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-md-6 col-xl-4">
+                <article class="project-card reveal">
+                  <div class="project-preview">
+                    <div class="project-art project-art-shinobi">
+                      <div class="art-topline"><span>忍道 // MY NINDŌ</span><span>03—03</span></div>
+                      <div class="shinobi-symbol">忍</div>
+                      <strong>CODE.<br />CREATE.<br />EVOLVE.</strong>
+                      <i>RODRIGO QUIROZ · 2026</i>
+                    </div>
+                    <span class="project-number">03</span>
+                  </div>
+                  <div class="project-body">
+                    <p class="eyebrow">PORTAFOLIO · PERSONAL</p>
+                    <div class="project-title-row">
+                      <h3>SHINOBI.DEV</h3>
+                      <button
+                        class="project-details-button"
+                        type="button"
+                        data-project-title="SHINOBI.DEV"
+                        data-project-category="PORTAFOLIO · PERSONAL"
+                        data-project-description="Portafolio desarrollado con JavaScript Vanilla y Vite. Incluye navegación responsive, animaciones de entrada, tarjetas interactivas y una identidad visual inspirada en Naruto Shippuden."
+                        data-project-stack="Vite, JavaScript, Bootstrap, CSS"
+                        data-project-status="Proyecto personal"
+                        aria-label="Ver detalles de SHINOBI.DEV"
+                      >
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <path d="M7 17 17 7M8 7h9v9" />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="project-description">
+                      Mi espacio personal para presentar proyectos, tecnologías y mi crecimiento como desarrollador.
+                    </p>
+                    <div class="tag-list">
+                      <span>Vite</span><span>JavaScript</span><span>Bootstrap</span><span>CSS</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <p class="projects-footnote reveal">
+              <span>✦</span> Cada proyecto representa una nueva oportunidad para aprender y mejorar.
+            </p>
+          </div>
+        </section>
+
+        <!-- ================================================
+             05. EXPERIENCIA Y APRENDIZAJE
+        ================================================= -->
+        <section class="content-section experience-section" id="experiencia" aria-labelledby="journeyTitle">
+          <div class="container-xl">
+            <div class="section-heading reveal">
+              <div>
+                <p class="section-index"><span>04</span> / MI CAMINO</p>
+                <h2 id="journeyTitle">Experiencia y <em>aprendizaje.</em></h2>
+              </div>
+              <p class="section-aside">Evolucionar también es<br />parte del entrenamiento.</p>
+            </div>
+
+            <div class="journey-list">
+              <article class="journey-item reveal">
+                <div class="journey-marker"><span>01</span></div>
+                <div class="journey-content">
+                  <p class="eyebrow">PROYECTOS COLABORATIVOS</p>
+                  <h3>Desarrollo de interfaces web</h3>
+                  <p>
+                    Colaboración en proyectos web, construcción de interfaces responsivas, integración de componentes y seguimiento de tareas mediante flujos de trabajo ágiles.
+                  </p>
+                  <div class="tag-list">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span><span>GitHub</span>
+                  </div>
+                </div>
+                <span class="journey-kanji" aria-hidden="true">忍</span>
+              </article>
+
+              <article class="journey-item reveal">
+                <div class="journey-marker"><span>02</span></div>
+                <div class="journey-content">
+                  <p class="eyebrow">DESARROLLO Y PRÁCTICA</p>
+                  <h3>Construir, probar y mejorar</h3>
+                  <p>
+                    Desarrollo y mantenimiento de aplicaciones web, revisión de requerimientos y documentación básica de funcionalidades y componentes.
+                  </p>
+                  <div class="tag-list">
+                    <span>JavaScript</span><span>React</span><span>Git</span><span>Scrum</span>
+                  </div>
+                </div>
+                <span class="journey-kanji" aria-hidden="true">忍</span>
+              </article>
+
+              <article class="journey-item reveal">
+                <div class="journey-marker"><span>03</span></div>
+                <div class="journey-content">
+                  <p class="eyebrow">APRENDIZAJE CONTINUO</p>
+                  <h3>Ampliando mi stack</h3>
+                  <p>
+                    Fortalecimiento de fundamentos de programación y práctica con tecnologías orientadas al desarrollo de software.
+                  </p>
+                  <div class="tag-list">
+                    <span>Java</span><span>C#</span><span>.NET</span><span>SQL</span>
+                  </div>
+                </div>
+                <span class="journey-kanji" aria-hidden="true">忍</span>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================
+             06. CONTACTO
+        ================================================= -->
+        <section class="content-section contact-section" id="contacto" aria-labelledby="contactTitle">
+          <div class="container-xl">
+            <div class="contact-shell reveal">
+              <div class="contact-decoration" aria-hidden="true"><span>忍</span><i></i></div>
+              <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                  <h2 id="contactTitle">¿Comenzamos una nueva <em>misión?</em></h2>
+                  <p class="contact-description">
+                    Si tienes una oportunidad, una idea o simplemente quieres conectar,
+                    me encantará leerte.
+                  </p>
+
+                  <div class="contact-socials">
+                    <a class="social-link is-disabled" id="githubLink" href="#" aria-disabled="true">
+                      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.7c3-.3 6.2-1.5 6.2-6.7a5.2 5.2 0 0 0-1.4-3.6 4.8 4.8 0 0 0-.1-3.6s-1.1-.3-3.6 1.4a12.3 12.3 0 0 0-6.4 0C7.3 1.2 6.2 1.5 6.2 1.5a4.8 4.8 0 0 0-.1 3.6 5.2 5.2 0 0 0-1.4 3.6c0 5.2 3.2 6.4 6.2 6.7A3.4 3.4 0 0 0 10 18v4" />
+                      </svg>
+                      <span>GitHub</span>
+                    </a>
+                    <a class="social-link is-disabled" id="linkedinLink" href="#" aria-disabled="true">
+                      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 9v11M4 4v.1M9 20V9h5v2c.8-1.3 2.1-2 4-2 2.8 0 4 1.8 4 4.7V20M9 20h5" />
+                      </svg>
+                      <span>LinkedIn</span>
+                    </a>
+                    <a class="social-link is-disabled" id="emailLink" href="#" aria-disabled="true">
+                      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="2.5" y="4.5" width="19" height="15" rx="2" />
+                        <path d="m3 6 9 7 9-7" />
+                      </svg>
+                      <span>Correo</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <form class="contact-form" id="contactForm">
+                    <div class="form-field">
+                      <label for="contactName">Tu nombre</label>
+                      <input
+                        class="form-control"
+                        id="contactName"
+                        name="name"
+                        type="text"
+                        placeholder="¿Cómo te llamas?"
+                        required
+                        minlength="2"
+                      />
+                    </div>
+                    <div class="form-field">
+                      <label for="contactEmail">Tu correo</label>
+                      <input
+                        class="form-control"
+                        id="contactEmail"
+                        name="email"
+                        type="email"
+                        placeholder="tu@correo.com"
+                        required
+                      />
+                    </div>
+                    <div class="form-field">
+                      <label for="contactMessage">Tu mensaje</label>
+                      <textarea
+                        class="form-control"
+                        id="contactMessage"
+                        name="message"
+                        rows="3"
+                        placeholder="Cuéntame un poco sobre tu idea..."
+                        required
+                        minlength="10"
+                      ></textarea>
+                    </div>
+                    <button class="button button-primary form-submit" type="submit">
+                      <span>Enviar</span>
+                      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M7 17 17 7M8 7h9v9" />
+                      </svg>
+                    </button>
+                    <p class="form-hint" id="formStatus" role="status" aria-live="polite">
+                      Configura tu correo en main.js para habilitar el envío.
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- ================================================
+           FOOTER
+      ================================================= -->
+      <footer class="site-footer">
+        <div class="container-xl">
+          <div class="footer-top">
+            <a class="brand footer-brand" href="#inicio">
+              <span class="brand-mark">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m12 2 2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8L12 2Z" />
+                </svg>
+              </span>
+              <span class="brand-name">RQH<span>.</span></span>
+            </a>
+            <a class="back-to-top" href="#inicio">
+              VOLVER ARRIBA
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7M8 7h9v9" />
+              </svg>
+            </a>
+          </div>
+          <div class="footer-bottom">
+            <span>© <span id="currentYear">2026</span> Rodrigo Quiroz Hernandez. Todos los derechos reservados.</span>
+          </div>
+        </div>
+      </footer>
+      <dialog class="project-dialog" id="projectDialog" aria-labelledby="dialogTitle">
+        <button class="dialog-close" type="button" aria-label="Cerrar ventana">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m5 5 14 14M19 5 5 19" />
+          </svg>
+        </button>
+        <p class="eyebrow" id="dialogEyebrow"></p>
+        <h2 id="dialogTitle"></h2>
+        <p id="dialogDescription"></p>
+        <p class="dialog-stack" id="dialogStack"></p>
+        <span class="dialog-status" id="dialogStatus"></span>
+      </dialog>
+    </div>
+
+    <script src="/vendor/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
