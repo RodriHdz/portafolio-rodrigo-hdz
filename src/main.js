@@ -226,8 +226,4 @@ contactForm.addEventListener('submit', (event) => {
   formStatus.classList.remove('is-warning');
 });
 
-/* ============================================================
-   AÑO AUTOMÁTICO DEL FOOTER
-   ============================================================ */
-
 document.querySelector('#currentYear').textContent = new Date().getFullYear();
